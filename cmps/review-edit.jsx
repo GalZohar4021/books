@@ -21,6 +21,10 @@ export function ReviewEdit({ onReviewSubmit }) {
         setReview((prevReview) => ({ ...prevReview, rank: val }))
     }
 
+    function onSubmit() {
+        if(review.name.length && review.text.length && review.rank) onReviewSubmit(review)
+    }
+
     return <section className="review-edit grid">
         <div className="review-line grid">
             <label htmlFor='review-name'>Your name</label>
@@ -39,7 +43,7 @@ export function ReviewEdit({ onReviewSubmit }) {
 
 
 
-        <button onClick={() => { onReviewSubmit(review) }}>Submit</button>
+        <button onClick={() => { onSubmit() }}>Submit</button>
 
     </section>
 }
