@@ -2,6 +2,7 @@ const { useState, useEffect, useRef } = React
 const { useParams, Link, useNavigate } = ReactRouterDOM
 
 import { bookService } from '../services/book.service.js'
+import { Reviews } from './reviews.jsx'
 
 export function BookDetails() {
     const [book, setBook] = useState(null)
@@ -16,6 +17,9 @@ export function BookDetails() {
     const { bookId } = useParams()
     const navigate = useNavigate()
 
+
+
+
     useEffect(() => {
         if (!bookId) return
         loadBook()
@@ -23,10 +27,11 @@ export function BookDetails() {
     }, [])
 
     useEffect(() => {
-        console.log(elPriceRef.current)
         if (priceColorRef.current && elPriceRef.current) elPriceRef.current.style.color = priceColorRef.current
 
     }, [book])
+
+
 
     function loadBook() {
         bookService.get(bookId)
@@ -89,6 +94,6 @@ export function BookDetails() {
                 </div>
             </div>
         </article>}
+        {book && <Reviews id={book.id} />}
     </section>
-
 }

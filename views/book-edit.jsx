@@ -237,7 +237,7 @@ export function BookEdit() {
             </div>
             <div className="editor-tools flex-row">
                 <button type='submit'>{bookId ? 'Save' : 'Add'}</button>
-                <Link to="/book">Cancel</Link>
+                <Link to={`/book/${bookToEdit.id}`}>Cancel</Link>
             </div>
 
         </form>

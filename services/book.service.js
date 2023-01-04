@@ -475,31 +475,31 @@ function query(filterBy = getDefaultFilter()) {
     return storageService.query(BOOKS_DB_KEY)
         .then(books => {
 
-            if(filterBy.title.length) {
+            if (filterBy.title.length) {
                 const regex = new RegExp(filterBy.title, 'i')
                 books = books.filter(book => regex.test(book.title))
             }
-            
-            if(filterBy.subtitle.length) {
+
+            if (filterBy.subtitle.length) {
                 const regex = new RegExp(filterBy.subtitle, 'i')
                 books = books.filter(book => regex.test(book.subtitle))
             }
-            
-            if(filterBy.pageCount) {
+
+            if (filterBy.pageCount) {
                 books = books.filter(book => book.pageCount <= filterBy.pageCount)
             }
-            
-            if(filterBy.publishedDate !== 0) {
+
+            if (filterBy.publishedDate !== 0) {
                 console.log(filterBy.publishedDate)
                 books = books.filter(book => book.publishedDate === filterBy.publishedDate)
             }
 
 
-            if(filterBy.author.length) {
+            if (filterBy.author.length) {
                 books = books.filter(book => book.authors.findIndex(author) !== -1)
             }
 
-            if(filterBy.category.length) {
+            if (filterBy.category.length) {
                 books = books.filter(book => book.categories.findIndex(category) !== -1)
             }
             return books
@@ -507,12 +507,13 @@ function query(filterBy = getDefaultFilter()) {
 }
 
 function _createBooks() {
-    if (!utilService.loadFromStorage(BOOKS_DB_KEY)) utilService.saveToStorage(BOOKS_DB_KEY, books)
+    if (!utilService.loadFromStorage(BOOKS_DB_KEY)) {
+        utilService.saveToStorage(BOOKS_DB_KEY, books)
+    }
 }
 
-
 function getDefaultFilter() {
-    return { title: '', subtitle: '' ,author: '' , publishedDate: 0 , pageCount: Infinity, category: ''}
+    return { title: '', subtitle: '', author: '', publishedDate: 0, pageCount: Infinity, category: '' }
 }
 
 

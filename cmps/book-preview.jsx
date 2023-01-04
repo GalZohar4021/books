@@ -1,9 +1,13 @@
 const { Link } = ReactRouterDOM
 
+import { bookService } from "../services/book.service.js"
+
 export function BookPreview({ book, onRemoveBook }) {
     const defaultUrl = '../assets/img/default.jpg'
     const bookThumbnail = book.thumbnail ? book.thumbnail : defaultUrl
     const bookDesc = (book.description.length > 120) ? book.description.substring(0,120) + '...' : book.description
+
+
     return <article className="book-preview flex-row">
         <div className="flex-col">
             {book.listPrice.isOnSale &&<span className="for-sale">For sale!</span>}
