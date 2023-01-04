@@ -107,3 +107,8 @@ button.add-author {
     width: fit-content;
     align-self: center;
 }
+
+img.thumb {
+    align-self: center;
+    max-width: 50%;
+}
