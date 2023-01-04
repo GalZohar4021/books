@@ -1,0 +1,77 @@
+div.about-me {
+
+    max-width: 1120px;
+    width: 75vw;
+    justify-content: flex-start;
+    margin: 0 auto;
+
+    padding: 0.5rem 0.5rem;
+
+    border-radius: 30px;
+
+    background: #ada9963f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEAA2, #dbdbdbA2, #f2f2f2A2, #ada996A2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaeaeaA2, #DBDBDBA2, #f2f2f2A2, #ada996A2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin-block: 3rem;
+}
+
+div.about-info {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 2;
+
+    padding: 2%;
+}
+
+span.card-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(0, 31, 63);
+    margin: 0;
+}
+
+span.card-sub-header {
+    margin: 0;
+    margin-block-start: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(105, 114, 183, 0.55);
+}
+
+div.my-thumb {
+
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5%;
+}
+
+img.about-me-img {
+    max-height: 200px;
+    max-width: 200px;
+    height: 16vw;
+    width: 16vw;
+    border-radius: 35%;
+}
+
+p.card-text {
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+div.about-icons {
+    margin-block: 0.5rem;
+}
+
+div.about-icons>a>i {
+    margin-inline-end: 1rem;
+    font-size: 2.5rem;
+    color: var(--blue-color);
+}
+
+span.contact-me {
+    font-size: 1.5rem;
+}

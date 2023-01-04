@@ -1,0 +1,48 @@
+html , body, #app-root , section.app {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+html {
+    font-size: calc(5px + 0.390625vw);
+    font-family: 'openSans';
+}
+
+body{
+    min-height: 100%;
+    background-color: rgb(236, 234, 215);
+}
+
+section.app{
+    justify-content: space-between;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--textbox-border-color);
+}
+
+.grid {
+    display: grid;
+}
+
+input[type='number'] {
+    text-align: center;
+}

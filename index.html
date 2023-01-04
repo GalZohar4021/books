@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="lib/react.development.js"></script>
+    <script src="lib/react-dom.development.js"></script>
+    <script src="lib/history.js"></script>
+    <script src="lib/react-router.js"></script>
+    <script src="lib/react-router-dom.js"></script>
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="assets/style/main.css" />
+    <script src="https://kit.fontawesome.com/08a2c121f6.js" crossorigin="anonymous"></script>
+    <title>App</title>
+  </head>
+
+  <body>
+    <div id="app-root" class="flex-col"></div>
+
+    <script type="module/babel" data-presets="ca-preset" src="app.js"></script>
+    
+    <script src="lib/loadBabelModules.js"></script>
+    <script src="lib/babel.js"></script>
+    <script src="lib/babel-preset.js"></script>
+
+    <script type="module" src="./services/util.service.js"></script>
+    <script type="module" src="./services/async-storage.service.js"></script>
+    <script type="module" src="./services/event-bus.service.js"></script>
+  </body>
+</html>

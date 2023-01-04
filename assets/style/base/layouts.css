@@ -1,0 +1,16 @@
+.main-layout >*:not(.full) {
+    max-width: var(--app-width-xl);
+}
+
+@media (max-width: 2300px) {
+    .main-layout>*:not(.full){
+        max-width: var(--app-width-l);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .main-layout>*:not(.full){
+        max-width: unset;
+    }
+}

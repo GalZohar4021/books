@@ -1,0 +1,6 @@
+@import './setup/setup-main.css';
+@import './base/base-main.css';
+@import './cmps/cmps-main.css';
+@import './views/views-main.css';
+@import './views/home.css';
+@import './views/about.css';

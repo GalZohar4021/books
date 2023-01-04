@@ -1,0 +1,6 @@
+ul.book-list {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+}

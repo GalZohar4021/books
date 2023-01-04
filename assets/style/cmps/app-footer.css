@@ -1,0 +1,16 @@
+footer {
+    color: var(--clr-app-nav-hover-background);
+    line-height: 1.5;
+
+    justify-self: flex-end;
+    justify-content: center;
+
+    font-size: 1.5rem;
+
+    padding-block: 6rem;
+}
+
+
+footer >* {
+    margin: 0 auto;
+}
