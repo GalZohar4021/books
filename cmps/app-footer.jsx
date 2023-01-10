@@ -3,7 +3,6 @@ const { Link, NavLink } = ReactRouterDOM
 export function AppFooter() {
 
     return <footer className="app-header full main-layout flex-col">
-            <h2>books-store</h2>
             <h5>All rights reserved 2022&copy; by Gal Zohar</h5>
     </footer>
 
