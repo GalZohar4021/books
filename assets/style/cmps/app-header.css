@@ -2,6 +2,9 @@ header.app-header {
     margin: 0 auto;
     justify-content: center;
     width: 100%;
+
+    background: rgb(239, 236, 236);
+    box-shadow: 0rem 0.08rem var(--color-orange);
 }
 
 .header-box {
@@ -11,7 +14,7 @@ header.app-header {
 
 
 h1.app-logo {
-    color: white;
+    color: var(--color-orange);
     font-size: 5rem;
 }
 
@@ -35,14 +38,13 @@ nav.app-nav > a {
 
     height: 100%;
 
-    color: var(--clr-app-nav-hover-background);
+    color: var(--color-orange);
     font-size: 2.5rem;
 }
 
 nav.app-nav a:hover,
 nav.app-nav a:active {
-    background-color: var(--clr-app-nav-hover-background);
-    color: var(--clr-app-nav-hover-text);
+    color: var(--clr-app-nav-hover-background);
 }
 
 
@@ -58,6 +60,8 @@ div.header-box>button.menu-toggle-btn {
 
     border: none;
     border-radius: 0;
+
+    color: var(--color-orange);
 
     cursor: pointer;
 
@@ -95,7 +99,7 @@ body.menu-open div.main-screen {
         width: 100%;
         display: none;
         color: white;
-        background: #ff4b1f;
+        background: var(--color-orange);
         padding-block: 2rem;
     }
 

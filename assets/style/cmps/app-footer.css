@@ -1,5 +1,5 @@
 footer {
-    color: var(--clr-app-nav-hover-background);
+    color: var(--color-orange);
     line-height: 1.5;
 
     justify-self: flex-end;

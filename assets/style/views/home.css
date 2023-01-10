@@ -1,3 +1,6 @@
 div.home-message-box{
     width: 80vw;
+    background-color: #e5ebfb;
+    box-shadow: 0.05rem 0.02rem 0.1rem 0.1rem #ff4b1f;
+    padding: 2rem;
 }

@@ -84,9 +84,9 @@ export function BookDetails() {
                 <h3 className='subtitle'>{book.subtitle}</h3>
                 <pre className='desc'>{book.description}</pre>
                 <div className='more-details flex-col'>
-                    <span className='published-at'>Published: {book.publishedDate}</span>
-                    <span className='pages'>Pages: {book.pageCount}</span>
-                    <span className='categories'>Categories: {bookCategoriesRef.current}</span>
+                    <span className='details-label'>Published: <span className='details-val'>{book.publishedDate}</span></span>
+                    <span className='details-label'>Pages: <span className='details-val'>{book.pageCount}</span></span>
+                    <span className='details-label'>Categories: <span className='details-val'>{bookCategoriesRef.current}</span></span>
                 </div>
                 <div className="book-actions flex-row">
                     <Link to={`/book/edit/${book.id}`}> Edit</Link>

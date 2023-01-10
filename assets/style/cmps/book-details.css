@@ -34,7 +34,7 @@ div.details-box>h3.subtitle {
 }
 
 div.details-box>pre.desc {
-    white-space: pre-wrap; 
+    white-space: pre-wrap;
     font-size: 1.4rem;
     margin-block-end: 4rem;
     color: #6b6c70;
@@ -50,7 +50,19 @@ div.details-box>h4.price {
 div.more-details {
     font-size: 1.4rem;
     line-height: 1.7;
+    align-self: start;
+    margin-block: 4rem;
 }
+
+div.more-details>span.details-label {
+    display: inline;
+    font-weight: 900;
+}
+
+span.details-val {
+    font-weight: 100;
+}
+
 
 img.thumb {
     margin-block-end: 3rem;

@@ -16,6 +16,8 @@ div.about-me {
     background: linear-gradient(to right, #eaeaeaA2, #DBDBDBA2, #f2f2f2A2, #ada996A2);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    box-shadow: 0.2rem 0.25rem 0.7rem #263f85;
+
     margin-block: 3rem;
 }
 
